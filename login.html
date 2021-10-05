@@ -22,8 +22,8 @@
                     <i class="fas fa-eye"></i>
                 </span>    
             </div>
-            <input type="checkbox" name="checkbox" id="checkbox"><span>Lưu mật khẩu</span>
-            <a href="#forgot-pw" class="fg-pw " >Quên mật khẩu</a>
+            <input type="checkbox" name="checkbox" id="checkbox"><span class="text">Lưu mật khẩu</span>
+            <a href="./forgot.html" target="blank" class="fg-pw forgotPws " >Quên mật khẩu</a>
             <input class="btn login-btn" type="submit" value="Đăng nhập">
             <div id="lang">
                 <div class="lang-type">Ngôn ngữ :</div>
@@ -38,31 +38,17 @@
             </div>
         </form>
     </div>
-    <div id="forgot-pw">
-        <div class="container">
-            <i class="fas fa-times-circle"></i>      
-            <!-- <a href="#" class="close">&times;</a> -->
-            <img src="./assets/img/logo.png" alt="">
-            <div class="input-gr">
-                <h4>Đặt lại mật khẩu</h4>
-                <div class="input-items">
-                    <label for="email">Email</label>
-                    <input type="text" name="email" id="email-rs" placeholder="" required>
-                </div>
-                    <input class="btn send-btn" type="submit" value="Gửi">
-            </div>    
-        </div>           
-    </div>
-    <!-- <script>
-        const forgotPws = document.querySelectorAll('.js-forgot-pw')
+    <!-- htmldom -->
+    <script>
+        var pwElement = document.querySelector('.forgotPws');
+        function message () {
+              
+        }    
+        pwElement.addEventListener('click',message );
 
-        function showResetPw(){
-            alert("show")
-        }
+        //  console.log(pwElement);
+        
+        </script> 
 
-        for (const forgotPw) {
-            forgoPw.addEventListener('click',showResetPw )
-        }
-    </script> -->
 </body>
 </html>

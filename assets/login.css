@@ -43,7 +43,7 @@ img{
     display: block;
     margin: 20px auto;
     background-color: rgb(244, 244, 245);
-    padding: 14px 10px ;
+    padding: 14px 20px ;
     width: 500px;
     outline: none;
 }
@@ -51,17 +51,28 @@ img{
     position: relative;
 }
 .eye{
+    font-size: 24px;
     position: absolute;
     display: inline-block;
-    bottom: 16px;
-    left: 450px;
+    bottom: 8px;
+    left: 470px;
 }
 #checkbox{
-    padding: 5px;
-    border: rgb(141, 141, 233);
     border-radius: 2px;
+    position: absolute;
+    top: auto;
+    left: 50px;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    cursor: pointer;
 }
-     
+.text{
+    font-weight: 100;
+    position: relative;
+    left: 42px;
+    top: 3px;
+}    
 .form .fg-pw{
     color: #000;
     float: right;
@@ -120,24 +131,30 @@ img{
     text-decoration: none;
     color: #000;
 }
-#forgot-pw{
+.form .fg-pw {
+    margin-top: 6px;
+    color: #000;
+    float: right;
+    text-decoration: none;
+}
+/* #forgot-pw{
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.4);
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
-    /* z-index: 1;
+    z-index: 1;
     opacity: 0;
-    transition: 0.6s; */
+    transition: 0.6s;
 }
-/* #forgot-pw:target{
+#forgot-pw:target{
     height: 100%;
-    opacity: 1; */
-}
+    opacity: 1;}
+
 .container{
     position: relative;
     border-radius:15px ;
@@ -199,4 +216,4 @@ h4{
 .send-btn{
     position: relative;
     bottom: 10px;
-}
+} */
